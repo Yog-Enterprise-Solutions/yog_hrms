@@ -11,7 +11,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/yog_hrms/css/yog_hrms.css"
-# app_include_js = "/assets/yog_hrms/js/yog_hrms.js"
+app_include_js = "/assets/yog_hrms/js/map.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/yog_hrms/css/yog_hrms.css"
@@ -28,7 +28,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {    
+    "Shift Type" : "public/js/autocomplete.js",
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
