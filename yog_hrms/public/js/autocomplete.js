@@ -17,8 +17,10 @@ function initMap(frm, divID, autoComplete) {
             const place = autocomplete.getPlace()
             const lat = place.geometry.location.lat();
             const lng = place.geometry.location.lng();
-            frm.doc.custom_coordinates_ = `${lat},${lng}`;
-            frm.refresh_fields();
+            frm.set_value('custom_coordinates_', `${lat},${lng}`) ;
+            frm.set_value('custom_address', place.formatted_address);
+            // frm.refresh_fields();
+            frm.save();
         }        
 
         
